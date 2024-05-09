@@ -43,3 +43,9 @@ if ingredients_list:
         
     st.stop()
     #st.text(ingredients_list)
+
+
+# New section to display the fruityvice nutrition information
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
